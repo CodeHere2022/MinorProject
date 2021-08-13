@@ -60,6 +60,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+}
+
 input{
     border: none;
     outline: none;
