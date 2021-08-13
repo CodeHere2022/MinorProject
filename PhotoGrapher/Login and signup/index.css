@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display:block;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: #F8485E; 
+}
+
+.header-inner{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-container{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image{
+    width: 156px;
+    height: 87px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.middle-container{
+    width: 100%;
+    height:50%;
+    margin-top: 1rem;
+}
+
+.bottom-container{
+   width: 100%;
+}
+
+.form-inner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius:9px;
+    padding: .4em 0;
+}
+
+.submit-btn{
+    border: none;
+    padding: .2em 3rem;
+    text-transform: capitalize;
+    font-size:1.3em;
+    font-weight:400;
+    background-color: #FFC107;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius:16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image-singup{
+    display: none;
+}
+
+.password{
+    position: relative;
+}
+
+.text-see{
+   position:relative;
+}
+.fas{
+    position: absolute;
+    right:14px;
+    top:-25px;
+}
+
+@media only screen and (min-width:541px){
+
+    body{
+        overflow: hidden;
+    }
+    .header{
+        width: 80%;
+        height: 80%;
+        background-color: #F8485E; 
+        margin: 4rem auto;
+    }
+}
+
+@media only screen and (min-width:864px){
+    body{
+        overflow: hidden;
+    }
+    .header{
+        width: 80%;
+        height: 80%;
+        margin: 4rem auto;
+    }
+    .form-inner div{
+        width: 80% !important;
+    }
+    .submit-btn{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width:1140px){
+    body{
+        overflow: hidden;
+    }
+    .header{
+        width: 90%;
+        height: 90%;
+        margin: 2rem auto;
+    }
+    .image-singup{
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-singup img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   .header-inner{
+       flex-direction: row;
+   }
+}
